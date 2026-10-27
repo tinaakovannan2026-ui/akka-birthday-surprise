@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Akka! 💗</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sparkle sparkle-one">✦</div>
+  <div class="sparkle sparkle-two">♡</div>
+  <div class="sparkle sparkle-three">✧</div>
+
+  <main class="container">
+    <div class="top-label">♡ made with love for my akka ♡</div>
+
+    <section class="card screen active" id="welcome">
+      <div class="sticker">🧸💗🐰</div>
+      <p class="eyebrow">HEY, BIRTHDAY GIRL!</p>
+      <h1>Akkaaa, wait! 💌</h1>
+      <p class="description">
+        I've made something special for you.
+        But first... do you wanna see it? 👀
+      </p>
+      <div class="buttons">
+        <button class="btn primary" id="yesBtn">YESSS, SHOW ME! 💖</button>
+        <button class="btn secondary" id="noBtn">Nope 🙄</button>
+      </div>
+      <p class="reaction" id="reaction"></p>
+      <p class="small-note">Warning: cuteness and happy tears ahead 🥹</p>
+    </section>
+
+    <section class="card screen" id="quiz">
+      <div class="sticker">🕵️‍♀️🎀</div>
+      <p class="eyebrow">ROUND ONE</p>
+      <h2>Mini test, Akka!</h2>
+      <p class="description">
+        What's your little sister's official job?
+      </p>
+      <div class="options">
+        <button class="btn option">Professional irritator 😈</button>
+        <button class="btn option">Snack thief 🍟</button>
+        <button class="btn option correct">ALL OF THE ABOVE 💅</button>
+      </div>
+      <p class="reaction" id="quizReaction"></p>
+      <button class="btn primary next-btn" id="toCode">Unlock your surprise 🔐</button>
+    </section>
+
+    <section class="card screen" id="passcode">
+      <div class="sticker">🐰🔐💌</div>
+      <p class="eyebrow">TOP SECRET</p>
+      <h2>Your birthday vault</h2>
+      <p class="description">
+        Enter the secret code to unlock your gift.
+      </p>
+      <input id="passcodeInput" type="password"
+        inputmode="numeric" maxlength="8"
+        placeholder="Enter secret code" aria-label="Secret code">
+      <button class="btn primary next-btn" id="unlockBtn">Unlock! ✨</button>
+      <p class="reaction" id="codeReaction"></p>
+      <p class="small-note">Hint: for now, the code is 1234 🤫</p>
+    </section>
+
+    <section class="card screen" id="birthday">
+      <div class="sticker celebration">🎂💐💖</div>
+      <p class="eyebrow">YOUR SPECIAL DAY</p>
+      <h1>Happy Birthday, Akka!</h1>
+      <p class="description">
+        My built-in bestie, favourite headache,
+        and forever special person. 🥹
+      </p>
+
+      <div class="memory">
+        <div class="memory-icons">🌷 📸 ✨</div>
+        <h3>Our little world</h3>
+        <p>
+          Silly fights, random laughs, secret jokes
+          and memories only we understand.
+          I hope we keep making them forever. 💗
+        </p>
+      </div>
+
+      <div class="letter">
+        <h3>Dear Akka, 💌</h3>
+        <p>
+          Happy birthday to my built-in bestie and
+          sometimes my biggest headache! 😂
+        </p>
+        <p>
+          Thank you for being part of so many little
+          moments that mean more to me than I always say.
+          I may tease you and annoy you, but there will
+          always be so much love behind it all.
+        </p>
+        <p>
+          I hope this year brings you happiness, peace,
+          laughter and all the beautiful things you deserve.
+          No matter how much we grow up, you'll always
+          be my Akka. 💗
+        </p>
+        <h3>Love you more than I say! 🎀</h3>
+      </div>
+
+      
+<button class="btn primary next-btn" id="meetDoraemonBtn" type="button">
+  💙 Meet Your Special Friend!
+</button>
+
+      <button class="btn primary next-btn" id="celebrateBtn">
+        One last surprise! 🎉
+      </button>
+      <p class="reaction" id="finalReaction"></p>
+      
+<button id="finalCelebrationBtn" class="btn primary" type="button">
+  🎉 One Last Birthday Blast!
+</button>
+
+<p id="finalCelebrationMessage" class="reaction"></p>
+
+    </section>
+
+    <footer>made with ♡ by your favourite thangachi</footer>
+
+
+
+<!-- Doraemon walking surprise -->
+ 
+<div id="doraemon-walk" class="doraemon-walk" hidden>
+  <div class="doraemon-character">
+    <img
+      id="doraemon-image"
+      src="doraemon.jpg"
+      alt="Doraemon arriving for Akka's birthday"
+    >
+  </div>
+
+  <div class="doraemon-dialogue">
+    <p id="doraemon-line">Akkaaa! 💙</p>
+    <button id="doraemon-next" class="btn primary" type="button">
+      Doraemon, sollu! 💌
+    </button>
+  </div>
+</div>
+
+<button id="gadget-button" class="btn primary" type="button" hidden>
+  💙 Doraemon's Magic Pocket!
+</button>
+
+
+<div id="gadget-surprise" hidden>
+  <h2 class="gadget-title">Ta-daaaa, Akka! ✨💙</h2>
+
+  <p id="gadget-name">
+    Akka, un wishes ellam nijamaaganum! 💗
+  </p>
+
+  <div class="gadgets-container">
+    
+<div class="magic-gadget door-gadget">
+  <div class="magic-door-scene">
+    <div class="magic-door">
+      <div class="door-panel">
+        <span class="door-knob"></span>
+      </div>
+    </div>
+
+    <div class="door-sparkle sparkle-one">✨</div>
+    <div class="door-sparkle sparkle-two">💖</div>
+    <div class="door-sparkle sparkle-three">⭐</div>
+    <div class="door-sparkle sparkle-four">🌸</div>
+  </div>
+
+  <h3>Anywhere Door 🚪</h3>
+  <p>Un dreams ellam nijamaagattum! 💖</p>
+
+  <button id="openMagicDoor" class="magic-door-button" type="button">
+    Open Magic Door! ✨
+  </button>
+
+  <p id="doorMessage" hidden>
+    Surpriseee! Unakku happiness mattum dhaan! 💗🌈
+  </p>
+</div>
+
+
+    <div class="magic-gadget copter-gadget">
+      <div class="gadget-emoji">🚁</div>
+      <h3>Take-copter</h3>
+      <p>Un happiness eppovum fly aagattum! 🥹</p>
+    </div>
+  </div>
+
+  <p class="final-gadget-wish">
+    Happy Birthday, Akka! Love you forever! 🎂💗
+  </p>
+</div>
+
+
+
+  </main>
+
+
+<!-- Akka's Special Memories -->
+<section class="photo-gallery">
+  <h2>📸 Our Little Memories 💗</h2>
+  <p>Every picture holds a piece of my heart, Akka! 🥹</p>
+
+  <div class="photo-grid">
+    <div class="polaroid">
+      <img src="anitha5.jpg.jpeg" alt="childhood memories">
+      <p>My favourite person 💕</p>
+    </div>
+
+    <div class="polaroid">
+      <img src="anitha4.jpg.jpeg" alt="Our funny memory">
+      <p>Our silly moments 😂</p>
+    </div>
+
+    <div class="polaroid">
+      <img src="anitha2.jpg.jpeg" alt="Our happy moment">
+      <p>Forever my bestie 🫶</p>
+    </div>
+
+    <div class="polaroid">
+      <img src="akka1.jpg.jpeg" alt="A special memory">
+      <p>My safe place 💖</p>
+    </div>
+
+    <div class="polaroid">
+      <img src="akka3.jpg.jpeg" alt="My lovely Akka">
+      <p>More memories to come ✨</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Doraemon Surprise Page -->
+<section id="doraemon-page" class="screen">
+  <div class="container">
+    <div class="card">
+      <p class="eyebrow">A SPECIAL SURPRISE FOR AKKA 💙</p>
+      <h1>Doraemon Is Here! 🥹</h1>
+      <p class="description">
+        Akkaaa! Un birthday-ku Doraemon special-ah vandhirukkaan! 🎂💙
+      </p>
+
+      <div id="doraemon-walk" class="doraemon-walk" hidden>
+        <div class="doraemon-character">
+          <img id="doraemon-image"
+               src="doraemon.jpg"
+               alt="Doraemon walking">
+        </div>
+
+        <div class="doraemon-dialogue">
+          <p id="doraemon-line">Akkaaa! 💙</p>
+          <button id="doraemon-next" class="btn primary" type="button">
+            Doraemon, sollu! 💌
+          </button>
+        </div>
+      </div>
+
+      <button id="backToBirthday" class="btn secondary" type="button">
+        💗 Back to Birthday Page
+      </button>
+      
+<button id="secretLetterBtn" class="btn primary" type="button">
+  💌 One Secret Message for Akka
+</button>
+
+<div id="secretLetter" hidden>
+  <div class="letter">
+    <h3>To My Dearest Akka 💗</h3>
+    <p>
+      Akka, nee en life-la romba special. 🥹
+      Namma sandhosham, sanda, sirippu ellame
+      enakku precious memories.
+    </p>
+    <p>
+      Eppovum happy-ah iru. Un dreams ellam achieve pannanum.
+      Unakku eppovum support-ah un thangachi iruppen.
+    </p>
+    <p>
+      I love you so much, Akka! 💗🎂
+      Happy Birthday, my forever favourite person! 🫶
+    </p>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
